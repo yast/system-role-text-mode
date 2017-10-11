@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<productDefines xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+
+<!--
+Work around for the text domain
+textdomain="control"
+-->
+
+    <textdomain>control</textdomain>
+
+    <texts>
+      <headless_role>
+        <!-- TRANSLATORS: a label for a system role -->
+        <label>Headless Server</label>
+      </headless_role>
+      <headless_role_description>
+        <label>• no GUI environment, with Btrfs root (/) partition
+• Separate /home partition (XFS) for disks larger than 20GB</label>
+      </headless_role_description>
+    </texts>
+
+    <update>
+      <system_roles>
+        <insert_system_roles config:type="list">
+          <insert_system_role>
+            <!-- FATE#317481 -->
+            <system_roles config:type="list">
+              <system_role>
+                <id>headless_role</id>
+                <order config:type="integer">750</order>
+                <!-- the rest is overlaid over the feature sections and values. -->
+                <software>
+                  <default_patterns>base minimal_base</default_patterns>
+                  <!-- the cdata trick produces an empty string in the data
+                  instead of omitting the key entirely -->
+                  <optional_default_patterns><![CDATA[]]></optional_default_patterns>
+                </software>
+              </system_role>
+            </system_roles>
+          </insert_system_role>
+        </insert_system_roles>
+      </system_roles>
+    </update>
+</productDefines>
