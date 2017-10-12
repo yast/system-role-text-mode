@@ -1,5 +1,5 @@
 #
-# spec file for package system-role-server-headless
+# spec file for package system-role-text-mode
 #
 # Copyright (c) 2017 SUSE LINUX GmbH, Nuernberg, Germany.
 #
@@ -20,32 +20,32 @@
 #
 # IMPORTANT: Please do not change the control file or this spec file
 #   in build service directly, use
-#   https://github.com/yast/system-role-server-headless repository
+#   https://github.com/yast/system-role-text-mode repository
 #
 #   See https://github.com/yast/skelcd-control-server-role/blob/master/CONTRIBUTING.md
 #   for more details.
 #
 ######################################################################
 
-Name:           system-role-server-headless
+Name:           system-role-text-mode
 # xmllint (for validation)
 BuildRequires:  libxml2-tools
 # RNG validation schema
 BuildRequires:  yast2-installation-control >= 4.0.0
 
-Url:            https://github.com/yast/system-role-server-headless
+Url:            https://github.com/yast/system-role-text-mode
 AutoReqProv:    off
 Version:        15.0.0
 Release:        0
-Summary:        Server Normal role definition
+Summary:        Text Mode role definition
 License:        MIT
 Group:          Metapackages
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
-Provides:       installer_module_extension() = system-role-server-headless
+Provides:       installer_module_extension() = system-role-text-mode
 
 %description
-Meta package for Server Headless role definition.
+Meta package for Server in Text Mode role definition.
 It is not intended for installation.
 
 %prep
