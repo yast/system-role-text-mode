@@ -29,13 +29,11 @@ textdomain="control"
                 <id>headless_role</id>
                 <order config:type="integer">750</order>
                 <!-- the rest is overlaid over the feature sections and values. -->
-                <!-- commented out now, as roles does not support it
-                  <globals>
+                <globals>
                   <default_target>
                     multi-user
                   </default_target>
                 </globals>
-                -->
                 <software>
                   <default_patterns>base minimal_base x11</default_patterns>
                   <!-- the cdata trick produces an empty string in the data
