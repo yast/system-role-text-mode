@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Oct 20 05:31:48 UTC 2017 - jsrain@suse.cz
+
+- adjusted pattern list (bsc#1064277)
+- 15.0.2
+
+-------------------------------------------------------------------
 Mon Oct 16 09:05:02 UTC 2017 - jreidinger@suse.com
 
 - re-enable globals to redefine default systemd target to 

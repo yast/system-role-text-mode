@@ -35,7 +35,7 @@ textdomain="control"
                   </default_target>
                 </globals>
                 <software>
-                  <default_patterns>base minimal_base x11</default_patterns>
+                  <default_patterns>base enhanced_base yast2_basis x11_yast x11</default_patterns>
                   <!-- the cdata trick produces an empty string in the data
                   instead of omitting the key entirely -->
                   <optional_default_patterns><![CDATA[]]></optional_default_patterns>
