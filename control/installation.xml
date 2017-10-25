@@ -30,9 +30,7 @@ textdomain="control"
                 <order config:type="integer">750</order>
                 <!-- the rest is overlaid over the feature sections and values. -->
                 <globals>
-                  <default_target>
-                    multi-user
-                  </default_target>
+                  <default_target>multi-user</default_target>
                 </globals>
                 <software>
                   <default_patterns>base enhanced_base yast2_basis x11_yast x11</default_patterns>
