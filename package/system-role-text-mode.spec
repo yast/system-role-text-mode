@@ -35,7 +35,7 @@ BuildRequires:  yast2-installation-control >= 4.0.4
 
 Url:            https://github.com/yast/system-role-text-mode
 AutoReqProv:    off
-Version:        15.0.2
+Version:        15.0.3
 Release:        0
 Summary:        Text Mode role definition
 License:        MIT
