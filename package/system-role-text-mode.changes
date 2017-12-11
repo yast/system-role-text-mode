@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Dec  4 09:57:43 UTC 2017 - gsouza@suse.com
+
+- Filter SLES roles so that they are not shown with SLED
+  (fate#324198)
+- 15.0.4
+
+-------------------------------------------------------------------
 Wed Oct 25 07:12:53 UTC 2017 - jsrain@suse.cz
 
 - fixed default target definition (bsc#1064876)
