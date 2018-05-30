@@ -35,7 +35,7 @@ BuildRequires:  yast2-installation-control >= 4.0.4
 
 Url:            https://github.com/yast/system-role-text-mode
 AutoReqProv:    off
-Version:        15.0.5
+Version:        15.0.6
 Release:        0
 Summary:        Text Mode role definition
 License:        MIT
@@ -44,7 +44,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
 Provides:       installer_module_extension() = system-role-text-mode
 Provides:       extension_for_product() = SLES
-Provides:       extension_for_product() = SLES_HPC
+Provides:       extension_for_product() = SLE_HPC
 Provides:       extension_for_product() = SLES_SAP
 
 %description
