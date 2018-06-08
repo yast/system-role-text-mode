@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed May 30 06:18:15 UTC 2018 - jsrain@suse.cz
+
+- rename SLES_HPC -> SLE_HPC (bsc#1095053)
+- 15.0.6
+
+-------------------------------------------------------------------
 Tue Dec 19 08:43:01 UTC 2017 - gsouza@suse.com
 
 - Corrected SLES4SAP and SLES4HPC extension_for_product entry
