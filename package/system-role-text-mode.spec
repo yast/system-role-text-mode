@@ -27,7 +27,8 @@
 #
 ######################################################################
 
-Name:           system-role-text-mode
+%define role_name text-mode
+Name:           system-role-%{role_name}
 # xmllint (for validation)
 BuildRequires:  libxml2-tools
 # RNG validation schema
@@ -67,7 +68,8 @@ mkdir -p $RPM_BUILD_ROOT
 #
 # Add control file
 #
-install -m 644 control/installation.xml $RPM_BUILD_ROOT/
+mkdir -p $RPM_BUILD_ROOT/%{_datadir}/system-roles
+install -m 644 control/installation.xml $RPM_BUILD_ROOT/%{_datadir}/system-roles/${role_name}.xml
 
 # install LICENSE (required by build service check)
 mkdir -p $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
@@ -75,7 +77,7 @@ install -m 644 LICENSE $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
 
 %files
 %defattr(644,root,root,755)
-/installation.xml
+%{_datadir}/system-roles
 %doc %dir %{_prefix}/share/doc/packages/%{name}
 %doc %{_prefix}/share/doc/packages/%{name}/LICENSE
 
