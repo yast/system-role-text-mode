@@ -36,7 +36,7 @@ BuildRequires:  yast2-installation-control >= 4.0.4
 
 Url:            https://github.com/yast/system-role-text-mode
 AutoReqProv:    off
-Version:        15.1.0
+Version:        15.1.1
 Release:        0
 Summary:        Text Mode role definition
 License:        MIT
@@ -69,7 +69,7 @@ mkdir -p $RPM_BUILD_ROOT
 # Add control file
 #
 mkdir -p $RPM_BUILD_ROOT/%{_datadir}/system-roles
-install -m 644 control/installation.xml $RPM_BUILD_ROOT/%{_datadir}/system-roles/${role_name}.xml
+install -m 644 control/installation.xml $RPM_BUILD_ROOT/%{_datadir}/system-roles/%{role_name}.xml
 
 # install LICENSE (required by build service check)
 mkdir -p $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
