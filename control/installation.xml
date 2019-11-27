@@ -14,7 +14,7 @@ textdomain="control"
         <label>Text Mode</label>
       </headless_role>
       <headless_role_description>
-        <label>• X server without GNOME</label>
+        <label>• Contains X server but no GNOME Desktop</label>
       </headless_role_description>
     </texts>
 
