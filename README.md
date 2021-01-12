@@ -1,5 +1,8 @@
-system-role-server-headless
+system-role-text-mode
 ==============================
+
+[![Workflow Status](https://github.com/yast/system-role-text-mode/workflows/CI/badge.svg?branch=master)](
+https://github.com/yast/system-role-text-mode/actions?query=branch%3Amaster)
 
 Extension package that lives in module and extend installation by roles provided by this module.
 
