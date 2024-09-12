@@ -1,7 +1,7 @@
 #
-# spec file for package system-role-text-mode
+# spec file
 #
-# Copyright (c) 2017 SUSE LINUX GmbH, Nuernberg, Germany.
+# Copyright (c) 2023 SUSE LLC
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -12,7 +12,7 @@
 # license that conforms to the Open Source Definition (Version 1.9)
 # published by the Open Source Initiative.
 
-# Please submit bugfixes or comments via http://bugs.opensuse.org/
+# Please submit bugfixes or comments via https://bugs.opensuse.org/
 #
 
 
@@ -34,7 +34,7 @@ BuildRequires:  libxml2-tools
 # RNG validation schema
 BuildRequires:  yast2-installation-control >= 4.0.4
 
-Url:            https://github.com/yast/system-role-text-mode
+URL:            https://github.com/yast/system-role-text-mode
 AutoReqProv:    off
 Version:        15.6.0
 Release:        0
@@ -43,11 +43,11 @@ License:        MIT
 Group:          Metapackages
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
-Provides:       installer_module_extension() = system-role-text-mode
 Provides:       extension_for_product() = SLES
 Provides:       extension_for_product() = SLES_BCL
-Provides:       extension_for_product() = SLE_HPC
 Provides:       extension_for_product() = SLES_SAP
+Provides:       extension_for_product() = SLE_HPC
+Provides:       installer_module_extension() = system-role-text-mode
 
 %description
 Meta package for Server in Text Mode role definition.
